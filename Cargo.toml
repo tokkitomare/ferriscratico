@@ -1,0 +1,24 @@
+[package]
+name = "ferriscratico"
+version = "0.1.0"
+edition = "2021"
+description = "Bot feito exclusivamente para o servidor Rustocracia no Discord! (https://discord.gg/Xs6bYsqKej)"
+authors = ["tokkitomare, devmyna"]
+license = "MIT"
+
+[[bin]]
+name = "test"
+path = "src/test.rs"
+
+[dependencies]
+async-trait = { version = "0.1.83", default-features = false }
+chrono = "0.4.39"
+colored = "2.2.0"
+dotenvy = "0.15.7"
+poise = "0.6.1"
+poise_macros = "0.6.1"
+regex = "1.11.1"
+rust-i18n = "3.1.2"
+tokio = { version = "1.41.1", features = ["macros", "rt-multi-thread"], default-features = false }
+tracing = { version = "0.1.41", features = ["log"] }
+tracing-subscriber = "0.3.19"
